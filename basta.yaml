@@ -1,0 +1,28 @@
+---
+ignore:
+  - basta.yaml
+  - .git/
+  - README.md
+
+passed-through:
+
+variables:
+  - name: service
+    type: string
+    description: service name. used as the module name.
+    default: hello-gorilla
+  - name: port
+    type: integer
+    description: port on which the mux server should run
+    default: 8000
+  - name: endpoint
+    type: string
+    description: path to the only endpoint of this service
+  - name: json
+    type: boolean
+    description: true if the the response content-type should be application/json
+    default: true
+  - name: responseText
+    type: string
+    description: service name. used as the module name.
+    default: hello-gorilla
